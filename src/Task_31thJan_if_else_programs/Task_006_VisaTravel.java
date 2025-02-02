@@ -14,11 +14,36 @@ public class Task_006_VisaTravel {
         // Should be greater than or equal to 18 to be eligible to travel
         //  Visa Status :- Must be a valid string indicating the visa status (e.g., "valid" or "invalid").
         // You can also use a boolean where true indicates a valid visa and false indicates an invalid visa.
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter age:");
-        int age = sc.nextInt();
-        System.out.println("Enter Visa status");
-        String status=sc.next();
 
-    }
-}
+        int Age;
+        String Visa_Status;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter your age");
+        Age=sc.nextInt();
+        System.out.println("Enter your Visa status");
+        Visa_Status=sc.next();
+        if(Age>0)
+        {
+            if(Age>=18)
+            {
+                if(Visa_Status.contains("valid"))
+                {
+                    System.out.println("You can travel");
+                }
+                else
+                {
+                    System.out.println("you can't travel as visa is not valid");
+                }
+            }else
+            {
+                System.out.println("you can't travel as your age should be equals and greater than 18");
+
+            }
+        }    else
+        {
+            System.out.println("you can't travel as your age should be greater than 0");
+
+
+        }
+
+    }}
