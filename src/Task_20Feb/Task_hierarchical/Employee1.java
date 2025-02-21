@@ -1,4 +1,4 @@
-package Task_hierarchical;
+package Task_20Feb.Task_hierarchical;
 
 public class Employee1 extends Company {
     void EmployeeName1() {
